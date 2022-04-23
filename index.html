@@ -1,13 +1,23 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Wanderhome Kith and Kin generator</title>
-	<link rel="stylesheet" href="style.css">
-	</head>
-<body>
+    <title>Wanderhome Kith and Kin generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+    function myFunction() {
+        var number = "123";
+        document.getElementById("myAnimal").innerHTML = number;
+    }
+    </script>
+</head>
 
-<h1>Wanderhome Kith and Kin generator</h1>
-<p>For use generating NPCs and places in the came Wandehome.</p>
-
+<body onload="myFunction()">
+    <div class="display">
+        <h1>Wanderhome Kith and Kin generator</h1>
+        <p>Your NPC is a(n) <span id="myTrait"></span> <span id="myAnimal"></span></p>
+    </div>
 </body>
+<script src="script.js"></script>
+
 </html>
